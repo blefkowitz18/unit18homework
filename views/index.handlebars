@@ -1,0 +1,19 @@
+<div id="wrapper">
+    <h1>News App</h1>
+    <div class = "row"></div>
+    <div id="articles" class = "col-8"></div>
+        <ul>
+        {{#each title}}
+        {{#each link}}
+        </ul>
+    <div id="notes" class = "col-4">
+        <p>
+            {{this.title}}
+            <input id = "titleInput" name = "titleName">
+            <textarea id = "bodyInput" name = "body"></textarea>
+            <button data-id="{{this._id}}" id = "saveNote">Save Note</button>
+        </p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./public/js/app.js"></script>
